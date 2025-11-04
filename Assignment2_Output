@@ -1,0 +1,67 @@
+
+ Choose Sorting Parameter: rating / year / popularity (or type 'exit' to quit)
+rating
+
+Before Sorting:
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+
+ After Sorting by RATING:
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+
+ Time Taken: 0.044 ms
+
+ Choose Sorting Parameter: rating / year / popularity (or type 'exit' to quit)
+year
+
+Before Sorting:
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+
+ After Sorting by YEAR:
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+
+ Time Taken: 0.049 ms
+
+ Choose Sorting Parameter: rating / year / popularity (or type 'exit' to quit)
+popularity
+
+Before Sorting:
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+
+ After Sorting by POPULARITY:
+Avengers: Endgame    | IMDB: 8.4 | Year: 2019 | Popularity: 99
+The Dark Knight      | IMDB: 9.0 | Year: 2008 | Popularity: 97
+Interstellar         | IMDB: 8.6 | Year: 2014 | Popularity: 96
+Inception            | IMDB: 8.8 | Year: 2010 | Popularity: 95
+Oppenheimer          | IMDB: 8.7 | Year: 2023 | Popularity: 92
+Dune                 | IMDB: 8.1 | Year: 2021 | Popularity: 85
+
+ Time Taken: 0.061 ms
+
+ Choose Sorting Parameter: rating / year / popularity (or type 'exit' to quit)
+exit
+ Exiting StreamFlix Sorter...

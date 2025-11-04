@@ -1,0 +1,39 @@
+=== Disaster Relief Resource Allocation System ===
+Enter number of relief items: 4
+Enter truck capacity (in kg): 50
+
+Enter details for item 1:
+Name: Food
+Weight (kg): 10
+Utility value: 60
+Is it perishable? (true/false): true
+
+Enter details for item 2:
+Name: Medicine
+Weight (kg): 20
+Utility value: 100
+Is it perishable? (true/false): true
+
+Enter details for item 3:
+Name: Tent
+Weight (kg): 30
+Utility value: 120
+Is it perishable? (true/false): false
+
+Enter details for item 4:
+Name: Water
+Weight (kg): 40
+Utility value: 80
+Is it perishable? (true/false): true
+
+Select algorithm:
+1. Brute Force (Exhaustive)
+2. Dynamic Programming (Optimal)
+3. Greedy Approximation (Fast)
+2
+
+Using Dynamic Programming Algorithm...
+Maximum Utility Value: 240
+Selected Items:
+  - Tent (Weight: 30 | Value: 120)
+  - Medicine (Weight: 20 | Value: 120)

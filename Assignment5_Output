@@ -1,0 +1,15 @@
+
+Computing Optimal Delivery Route for SwiftCargo...
+
+🔹 Stage 3: Node 4 → Next Node 6 | Edge Cost: 2.00 | Total Min Cost to Destination: 2.00
+🔹 Stage 3: Node 5 → Next Node 6 | Edge Cost: 3.00 | Total Min Cost to Destination: 3.00
+🔹 Stage 2: Node 2 → Next Node 4 | Edge Cost: 3.00 | Total Min Cost to Destination: 5.00
+🔹 Stage 2: Node 3 → Next Node 4 | Edge Cost: 2.00 | Total Min Cost to Destination: 4.00
+🔹 Stage 1: Node 1 → Next Node 2 | Edge Cost: 2.00 | Total Min Cost to Destination: 7.00
+
+Optimal Delivery Path (Stage-wise):
+Stage 1: Node 1 → Node 2 | Cost: 2.00
+Stage 2: Node 2 → Node 4 | Cost: 3.00
+Stage 3: Node 4 → Node 6 | Cost: 2.00
+
+Total Minimum Delivery Cost/Time: 7.00

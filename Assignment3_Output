@@ -1,0 +1,36 @@
+Emergency Relief Supply Distribution System
+Enter maximum boat capacity (in kg): 50
+Enter number of relief items: 4
+
+Enter details for item 1:
+Name: Food
+Weight (kg): 20
+Utility value: 100
+Is it divisible? (true for yes / false for no): true
+
+Enter details for item 2:
+Name: Water
+Weight (kg): 30
+Utility value: 120
+Is it divisible? (true for yes / false for no): true
+
+Enter details for item 3:
+Name: Medicine
+Weight (kg): 10
+Utility value: 200
+Is it divisible? (true for yes / false for no): false
+
+Enter details for item 4:
+Name: Blankets
+Weight (kg): 15
+Utility value: 60
+Is it divisible? (true for yes / false for no): false
+
+===  Selected Items for Transport ===
+ Medicine (Full) — Weight: 10.00 kg | Value: 200.00
+ Food (Full) — Weight: 20.00 kg | Value: 100.00
+ Water (Partial 66.67%) — Weight: 20.00 kg | Value: 80.00
+
+ Remaining Boat Capacity: 0.00 kg
+
+ maximum total utility value that can be transported: 380.00

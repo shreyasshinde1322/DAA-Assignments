@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+
+struct Movie {
+    string title;
+    double rating;
+    int year;
+    long long watchtime;
+};
+
+// Partition function
+int partition(Movie arr[], int s, int e, int choice) {
+    Movie pivot = arr[s];
+    int count = 0;
+
+    for (int i = s + 1; i <= e; i++) {
+        bool condition = false;
+        if (choice == 1) condition = (arr[i].rating < pivot.rating);
+        else if (choice == 2) condition = (arr[i].year < pivot.year);
+        else if (choice == 3) condition = (arr[i].watchtime < pivot.watchtime);
+
+        if (condition) count++;
+    }
+
+    int pivotIndex = s + count;
+    swap(arr[pivotIndex], arr[s]);
+
+    int i = s, j = e;
+    while (i < pivotIndex && j > pivotIndex) {
+        bool left = false, right = false;
+
+        if (choice == 1) {
+            left = (arr[i].rating <= pivot.rating);
+            right = (arr[j].rating > pivot.rating);
+        } else if (choice == 2) {
+            left = (arr[i].year <= pivot.year);
+            right = (arr[j].year > pivot.year);
+        } else if (choice == 3) {
+            left = (arr[i].watchtime <= pivot.watchtime);
+            right = (arr[j].watchtime > pivot.watchtime);
+        }
+
+        if (left) i++;
+        else if (right) j--;
+        else swap(arr[i++], arr[j--]);
+    }
+
+    return pivotIndex;
+}
+
+// QuickSort function
+void quicksort(Movie arr[], int s, int e, int choice) {
+    if (s >= e) return;
+    int p = partition(arr, s, e, choice);
+    quicksort(arr, s, p - 1, choice);
+    quicksort(arr, p + 1, e, choice);
+}
+
+int main() {
+    int n;
+    cout << "Enter number of movies: ";
+    cin >> n;
+
+    Movie arr[n];
+    cout << "Enter details (Title Rating Year WatchTime):\n";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i].title >> arr[i].rating >> arr[i].year >> arr[i].watchtime;
+    }
+
+    int choice;
+    cout << "\nSort by:\n1. IMDB Rating\n2. Release Year\n3. Watch Time Popularity\nEnter choice: ";
+    cin >> choice;
+
+    quicksort(arr, 0, n - 1, choice);
+
+    cout << "\nSorted Movies:\n";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i].title << " | Rating: " << arr[i].rating
+             << " | Year: " << arr[i].year
+             << " | WatchTime: " << arr[i].watchtime << endl;
+    }
+}
