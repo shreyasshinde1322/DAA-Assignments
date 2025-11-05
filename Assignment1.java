@@ -1,7 +1,9 @@
-//Name : Shreyas Suresh Shinde        PRN : 124B2F003
-//Assignment No. 1 : Design and implement a sorting algorithm using Merge Sort to efficiently arrange customer
-//orders based on their timestamps. The solution should handle a large dataset (up to 1 million orders) with minimal
-//computational overhead. Additionally, analyze the time complexity and compare it with traditional sorting techniques.
+/* Name : Shreyas Suresh Shinde        PRN : 124B2F003
+
+Assignment No. 1 : Design and implement a sorting algorithm using Merge Sort to efficiently arrange customer orders based on their timestamps. The solution
+should handle a large dataset (up to 1 million orders) with minimal computational overhead. Additionally, analyze the time complexity and compare it with 
+traditional sorting techniques.
+*/
 
 import java.util.*;
 class CustomerOrder {
