@@ -1,16 +1,15 @@
-//PRN - 123B1F063
-//Name - Pratik Rajkumar Mulik
-//Date - 
+/* Name : Shreyas Suresh Shinde    PRN : 124B2F003
 
-/*
- Scenario: Optimizing Delivery Routes for a Logistics Company 
-A leading logistics company, SwiftShip, is responsible for delivering packages to multiple cities. 
-To minimize fuel costs and delivery time, the company needs to find the shortest possible route 
-that allows a delivery truck to visit each city exactly once and return to the starting point. 
-The company wants an optimized solution that guarantees the least cost route, considering: 
+Assignment No 8
+
+Scenario:
+Optimizing Delivery Routes for a Logistics Company A leading logistics company, SwiftShip, is responsible for delivering packages to multiple cities. 
+To minimize fuel costs and delivery time, the company needs to find the shortest possible route that allows a delivery truck to visit each city
+exactly once and return to the starting point. The company wants an optimized solution that guarantees the least cost route, considering: 
 ● Varying distances between cities. 
 ● Fuel consumption costs, which depend on road conditions. 
 ● Time constraints, as deliveries must be completed within a given period. 
+
 Since there are N cities, a brute-force approach checking all (N-1)!permutations is infeasible 
 for large N (e.g., 20+ cities). Therefore, you must implement an LC (Least Cost) Branch and 
 Bound algorithm to find the optimal route while reducing unnecessary computations 
@@ -39,7 +38,6 @@ public class Assignment8 {
             bestPath = new ArrayList<>();
         }
 
-        // Lower bound calculation for pruning
         private int getLowerBound(boolean[] visited, int current) {
             int bound = 0;
 
@@ -64,7 +62,6 @@ public class Assignment8 {
             return bound;
         }
 
-        // Recursive Least Cost Branch and Bound
         private void branchAndBound(List<Integer> path, boolean[] visited, int currentCity, int currentCost) {
             if (path.size() == cities) {
                 int totalCost = currentCost + fuelCost[currentCity][0];
@@ -96,7 +93,6 @@ public class Assignment8 {
             }
         }
 
-        // Calculate total distance/time for a route
         private int calculateTime(List<Integer> path) {
             int total = 0;
             for (int i = 0; i < path.size() - 1; i++) {
@@ -106,7 +102,6 @@ public class Assignment8 {
             return total;
         }
 
-        // Find optimal route
         public void findOptimalRoute() {
             long start = System.currentTimeMillis();
 
