@@ -1,4 +1,10 @@
-import java.util.*;
+//Name : Shreyas Suresh Shinde        PRN : 124B2F003
+//Assignment No 2 : Movie Recommendation System Optimization A popular OTT platform, StreamFlix, offers personalized recommendations by sorting movies
+//based on user preferences, such as IMDB rating, release year, or watch time popularity. However, during peak hours, sorting large datasets 
+//slows down the system. As a backend engineer, you must:
+//● Implement Quicksort to efficiently sort movies based on various user-selectedparameters.
+//● Handle large datasets containing of movies while maintaining fast response timesimport java.util.*;
+
 class Movie {
     String title;
     double imdbRating;
@@ -53,8 +59,8 @@ public class Assignment_2 {
         Movie[] movies = {
                 new Movie("Inception", 8.8, 2010, 95),
                 new Movie("Avengers: Endgame", 8.4, 2019, 99),
-                new Movie("The Dark Knight", 9.0, 2008, 97),
-                new Movie("Dune", 8.1, 2021, 85),
+                new Movie("Game Of Thrones", 9.0, 2008, 97),
+                new Movie("Dark", 8.1, 2021, 85),
                 new Movie("Interstellar", 8.6, 2014, 96),
                 new Movie("Oppenheimer", 8.7, 2023, 92)
         };
